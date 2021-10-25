@@ -1,8 +1,8 @@
 int ENA = 3;//pin 3  connect pin mark (~)
-int IN1 = 9;//pin 9
-int IN2 = 10;//pin 10
-int IN3 = 11;//pin 11
-int IN4 = 12;//pin 12
+int IN1 = 9;//pin 9 motor1
+int IN2 = 10;//pin 10 motor1
+int IN3 = 11;//pin 11 motor2
+int IN4 = 12;//pin 12 motor2
 int ENB = 5;//pin 5  connect pin mark (~)
 
 void setup() {
@@ -14,8 +14,8 @@ pinMode(IN3, OUTPUT);
 pinMode(IN4, OUTPUT);
 pinMode(ENB, OUTPUT);
 
-analogWrite(ENA, 150);
-analogWrite(ENB, 150);
+analogWrite(ENA, 150);//speed motor1 0 : 255
+analogWrite(ENB, 150);//speed motor2 0 : 255
 }
 
 void loop() {
